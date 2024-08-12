@@ -7,17 +7,21 @@
    
   }
 
-body{
+.nav-backgroud{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.nav-sec, .banner-sec{
     max-width: 1445px;
     margin: 0px auto;
 }
 .colorful-title{
     color: #FF42A5;
 }
-.nav-sec{
+.nav-sec {
     display: flex;
     justify-content: space-between;
     background: #FFF;
+    box-shadow: aqua;
 }
 
 .logo-sec, .menu, .social-sec, .about-sec{
@@ -56,4 +60,53 @@ ul.social-sec {
     background: #d9d9d9;
     border-radius: 5px;
     padding: 8px 10px;
+}
+.banner-sec{
+    display: flex;
+    justify-content: space-between;
+}
+.banner-back {
+    background-image: url('../assets/images/Group\ 14.png');
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    gap: 10px;
+    padding: 20px;
+}
+.banner-content h2{
+    font-size: 48px;
+}
+
+h1.sec-title {
+    font-size: 95px;
+    font-weight: 900;
+    background: linear-gradient(to right, #F948B2, #8758F1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0px;
+}
+
+.banner-heighlight li i {
+    margin-right: 20px;
+    align-items: flex-start;
+    font-size: 20px;
+    margin-top: 20px;
+    background: linear-gradient(to right, #F948B2, #8758F1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+button {
+    padding: 20px 50px;
+    border-radius: 40px;
+    border: none;
+    font-size: 20px;
+    color: #fff;
+    background: linear-gradient(to right, #F948B2, #8758F1);
+}
+button#rough {
+    background: #4EC5F7;
+}
+ul.banner-heighlight {
+    padding: 0px;
 }
