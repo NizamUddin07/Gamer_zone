@@ -10,7 +10,7 @@
 .nav-backgroud{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-.nav-sec, .banner-sec{
+.nav-sec, .banner-inner{
     max-width: 1445px;
     margin: 0px auto;
 }
@@ -61,18 +61,16 @@ ul.social-sec {
     border-radius: 5px;
     padding: 8px 10px;
 }
-.banner-sec{
+.banner-inner {
     display: flex;
     justify-content: space-between;
 }
-.banner-back {
+.banner-sec{
     background-image: url('../assets/images/Group\ 14.png');
-    background-size: cover;
-    background-position: center;
-    width: 50%;
-    gap: 10px;
-    padding: 20px;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
 }
+
 .banner-content h2{
     font-size: 48px;
 }
@@ -145,7 +143,7 @@ ul.banner-heighlight {
 
 
 /* responsive */
-@media screen and (max-width:576px) {
+/* @media screen and (max-width:576px) {
     header{
         padding: 20px;
     }
@@ -173,7 +171,7 @@ ul.banner-heighlight {
       position: static;
       max-width: 300px;
     }
-}
+} */
 
 
 
@@ -222,6 +220,31 @@ ul.banner-heighlight {
     }
     .about-sec{
         flex-direction: column;
+    }
+    .banner-inner {
+        flex-direction: column;
+        align-items: center;
+    }
+    .Gammer-sec {
+        flex-direction: column;
+    }
+    .banner-sec img {
+        width: 80%;
+    }
+    .Gammer-sec img{
+        width: 80%;
+    }
+    .gammer-content {
+        text-align: center;
+        max-width: 90%;
+    }
+    .nav-sec {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding: 0px;
+        width: 80%;
+        margin-left: 0px;
     }
 }
 
